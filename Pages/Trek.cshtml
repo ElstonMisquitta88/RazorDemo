@@ -1,0 +1,55 @@
+﻿@page
+@model RazorDemo.Pages.TrekModel
+@{
+      ViewData["Title"] = "Trek List";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome </h1>
+</div>
+<div class="card-columns">
+    @foreach (var Trek in Model.AllTrekList)
+    {
+        <div class="card">
+             <h5 class="card-title">@Trek.TrekName</h5>
+            <div class="card-img" style="background-image:url('@Trek.img');width: 250px;height: 250px;background-size: cover;"></div>
+            <div class="card-body">
+                <h6 class="card-title">@Trek.Description</h6>
+            </div>
+        </div>
+    }
+</div>
+ </br>
+ 
+  @{
+       <p style="color:Red;">  @Model.Hellostring</p>
+      
+       <br/>
+       <p style="color:blue;"> @Model.DMessage</p>
+      
+   }
+ 
+     <table class="table table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Desc.</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Activity</th>
+      <td colspan="2"> @Model.RActivity.Result.activity</td>
+    </tr>
+
+    <tr>
+      <th scope="row">Type</th>
+      <td colspan="2"> @Model.RActivity.Result.type</td>
+    </tr>
+
+      <tr>
+      <th scope="row">Participants</th>
+      <td colspan="2"> @Model.RActivity.Result.participants</td>
+    </tr>
+  </tbody>
+</table>

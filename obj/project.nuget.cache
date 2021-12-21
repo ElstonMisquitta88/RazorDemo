@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "sUOGs0ZlO7z54N/+eghl1GSqhXvZWj9UGQ6j6qe0EOCoUaSTITn6eywwrcls0ZOU/ZCpfU6qncodTP/6iBma2A==",
+  "success": true,
+  "projectFilePath": "d:\\GitHub\\RazorDemo\\RazorDemo.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Elston\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
